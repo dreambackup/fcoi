@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- Custom styles for this template -->
+    <!--<link href="./Carousel Template · Bootstrap_files/carousel.css" rel="stylesheet">-->
+
+    <title>COI | Login</title>
+  </head>
+  <style>
+  section {
+    background-color: #fff;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.flex-column {
+    flex-direction: column!important;
+}
+.d-flex {
+    display: flex!important;
+}
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+*, ::after, ::before {
+    box-sizing: border-box;}
+	
+	
+	.min-vh-100 {
+    min-height: 100vh!important;
+}
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-center {
+    justify-content: center!important;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 768px)
+.pb-md-0, .py-md-0 {
+    padding-bottom: 0!important;
+}
+@media (min-width: 768px)
+.pt-md-0, .py-md-0 {
+    padding-top: 0!important;
+}
+.pb-6, .py-6 {
+    padding-bottom: 4.5rem!important;
+}
+.pt-6, .py-6 {
+    padding-top: 4.5rem!important;
+}
+@media (min-width: 1200px)
+.col-xl-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+@media (min-width: 992px)
+.col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+@media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 3rem!important;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    font-weight: 600;
+}
+.mb-1, .my-1 {
+    margin-bottom: .25rem!important;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .66667rem;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #152c5b;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    font-weight: 600;
+}
+.h6, h6 {
+    font-size: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .66667rem;
+}
+
+.text-muted {
+    color: #718096!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control-label {
+    color: #718096;
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: none;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+.input-group-append, .input-group-prepend {
+    display: flex;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-text {
+    transition: all .2s ease;
+}
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a0aec0;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fafbfe;
+    border: 1px solid #e2e8f0;
+    border-radius: .375rem;
+}
+
+.feather {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+svg {
+    vertical-align: middle;
+    overflow: hidden;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    position: relative;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4a5568;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e2e8f0;
+    border-radius: .375rem;
+    box-shadow: none;
+    transition: all .2s ease;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+.justify-content-between {
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+.form-control-label {
+    color: #718096;
+    font-size: .875rem;
+    font-weight: 500;
+    text-transform: none;
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+
+.text-underline--dashed {
+    border-bottom: 1px dashed!important;
+}
+.text-muted {
+    color: #718096!important;
+}
+.border-primary {
+    border-color: #008aff!important;
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+a {
+    outline: 0;
+    transition: all .2s ease;
+}
+a {
+    color: #008aff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+.input-group-append, .input-group-prepend {
+    display: flex;
+}
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle), .input-group>.input-group-append:last-child>.input-group-text:not(:last-child), .input-group>.input-group-append:not(:last-child)>.btn, .input-group>.input-group-append:not(:last-child)>.input-group-text, .input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-text {
+    transition: all .2s ease;
+}
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a0aec0;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #fafbfe;
+    border: 1px solid #e2e8f0;
+    border-radius: .375rem;
+}
+
+.feather {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+svg {
+    vertical-align: middle;
+    overflow: hidden;
+}
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
+    position: relative;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 1.5rem + 2px);
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4a5568;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e2e8f0;
+    border-radius: .375rem;
+    box-shadow: none;
+    transition: all .2s ease;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.btn {
+    position: relative;
+    transition: all .2s ease;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #008aff;
+    border-color: #008aff;
+    box-shadow: none;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button {
+    border-radius: 0;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.pb-3, .py-3 {
+    padding-bottom: 1rem!important;
+}
+.pt-3, .py-3 {
+    padding-top: 1rem!important;
+}
+
+.text-xs {
+    font-size: .75rem!important;
+}
+.text-uppercase {
+    text-transform: uppercase!important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 576px)
+.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn-neutral {
+    background-color: transparent;
+    color: #273444;
+    border: 2px solid #e2e8f0;
+}
+.btn {
+    position: relative;
+    transition: all .2s ease;
+}
+@media (min-width: 576px)
+.mb-sm-0, .my-sm-0 {
+    margin-bottom: 0!important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-neutral {
+    color: #273444;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+a {
+    outline: 0;
+    transition: all .2s ease;
+}
+a {
+    color: #008aff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-icon .btn-inner--icon img {
+    width: 20px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.btn-icon .btn-inner--text:not(:first-child) {
+    margin-left: .75em;
+}
+
+@media (min-width: 576px)
+.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn-neutral {
+    background-color: transparent;
+    color: #273444;
+    border: 2px solid #e2e8f0;
+}
+.btn {
+    position: relative;
+    transition: all .2s ease;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-neutral {
+    color: #273444;
+    background-color: #fff;
+    border-color: #fff;
+    box-shadow: none;
+}
+a {
+    outline: 0;
+    transition: all .2s ease;
+}
+a {
+    color: #008aff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.btn-icon .btn-inner--icon img {
+    width: 20px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+.btn-icon .btn-inner--text:not(:first-child) {
+    margin-left: .75em;
+}
+.text-center {
+    text-align: center!important;
+}
+.mt-4, .my-4 {
+    margin-top: 1.5rem!important;
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+small {
+    font-size: 80%;
+}
+
+.font-weight-bold {
+    font-weight: 600!important;
+}
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+a {
+    outline: 0;
+    transition: all .2s ease;
+}
+a {
+    color: #008aff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+      </style>
+    
+  <body>
+<!-- start header -->
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   	<nav class="navbar navbar-light bg-dark">  
+	  <a class="navbar-brand d-flex align-items-center" style="line-height:15px;" href="#">
+   <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-globe2 mx-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539a8.372 8.372 0 0 1-1.198-.49 7.01 7.01 0 0 1 2.276-1.52 6.7 6.7 0 0 0-.597.932 8.854 8.854 0 0 0-.48 1.079zM3.509 7.5H1.017A6.964 6.964 0 0 1 2.38 3.825c.47.258.995.482 1.565.667A13.4 13.4 0 0 0 3.508 7.5zm1.4-2.741c.808.187 1.681.301 2.591.332V7.5H4.51c.035-.987.176-1.914.399-2.741zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5H7.5v2.409c-.91.03-1.783.145-2.591.332a12.343 12.343 0 0 1-.4-2.741zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696A12.63 12.63 0 0 1 7.5 11.91v3.014c-.67-.204-1.335-.82-1.887-1.855a7.776 7.776 0 0 1-.395-.872zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964a9.083 9.083 0 0 0-1.565.667A6.963 6.963 0 0 1 1.018 8.5h2.49a13.36 13.36 0 0 0 .437 3.008zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909c.81.03 1.577.13 2.282.287-.12.312-.252.604-.395.872-.552 1.035-1.218 1.65-1.887 1.855V11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5h-2.49a13.361 13.361 0 0 0-.437-3.008 9.123 9.123 0 0 0 1.565-.667A6.963 6.963 0 0 1 14.982 7.5zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343c-.705.157-1.473.257-2.282.287V1.077c.67.204 1.335.82 1.887 1.855.143.268.276.56.395.872z"/>
+</svg>
+     <small> <Strong>Council<small> of </small><br> Innovation</strong></small></small>
+  </a>
+</nav>
+    <!--<a class="navbar-brand" href="#"><strong>COI</strong></a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+	      
+	    
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Insight <span class="sr-only">(current)</span></a>
+		  <li class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Business Design
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="./COI_business_design_sprint.html">Business Design Sprint</a>
+    <a class="dropdown-item" href="./COI_business_design_corporate_innovation_accelerator.html">Innovation Accelerator</a>
+    <a class="dropdown-item" href="./COI_business-design product-service-go-to-market.html">Product & service go to market</a>
+    <a class="dropdown-item" href="./COI_business_design_entrepreneur_in_residence.html">Entrepreneur in residence</a>
+  </div>
+</li>
+		
+	<li class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Strategy
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="./COI_strategy_insights_growth_strategy.html">Insights Growth Strategy</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_audit.html">Innovation & growth audit</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_strategy_sprint.html">Strategy Sprint</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_transformation.html">Innovation Transformation</a>
+    <a class="dropdown-item" href="./COI_strategy_future_exploration.html">Strategy Sprint</a>
+  </div>
+</li>
+
+<li class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" 
+  aria-expanded="false">
+    Exhibition & Sponsership
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="./COI_strategy_insights_growth_strategy.html">Wineria</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_audit.html">Game</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_strategy_sprint.html">Tasting square</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_transformation.html">Restaur</a>
+      </div>
+</li>
+
+
+	      
+	      
+	      
+	     
+	    <li class="nav-item">
+          <a class="nav-link" href="#">What's<span class="badge badge-pill badge-secondary">New</span></a>
+        </li>
+	   
+	      <li class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Community <span class="badge badge-pill badge-secondary">New</span>
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="./COI_Price_plan.html">Pricing</a>
+    <a class="dropdown-item" href="./COI_about_Blog.html">Support</a> 
+<a class="dropdown-item" href="./COI_blog.html">Stories</a>
+	  <a class="dropdown-item" href="./COI_blog.html">Team</a>
+    <!--<a class="dropdown-item" href="./COI_strategy_innovation_strategy_sprint.html">Strategy Sprint</a>
+    <a class="dropdown-item" href="./COI_strategy_innovation_transformation.html">Innovation Transformation</a>
+    <a class="dropdown-item" href="./COI_strategy_future_exploration.html">Strategy Sprint</a>-->
+  </div>
+</li>
+	      <!--<li class="nav-item">
+          <a class="nav-link" href="./COI_Price_plan.html">Pricing</a>
+        </li>-->
+	      
+	      <!--<li class="nav-item">
+          <a class="nav-link" href="./COI_login_setup.html">Login</a>
+        </li>-->
+		
+		<!--<li class="nav-item">
+          <a class="nav-link" href="./COI_about_Blog.html">Support</a>
+        </li>-->
+		
+		
+	     <!-- </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Community <span class="badge badge-pill badge-secondary">New</span></a>
+        </li>-->
+		
+		
+		
+       <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>-->
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        <a class="btn btn-outline-light my-2 my-sm-0" href="./COI_login_setup.html" >Login</a>
+      </form>
+    </div>
+  </nav>
+</header>  
+<!-- stop header-->
+	<!--start top level 1-->
+
+	<section>
+	<div class="container  d-flex flex-column">
+	<div class="row align-items-center justify-content-center min-vh-100">
+	<div class="col-md-6 col-lg-5 col-xl-4 py-6 py-md-0"><div>
+	
+	<div class="mb-4 text-center">
+	
+	<h6 class="h3 mt-5">Login</h6>
+	<p class="text-muted mb-0">Sign in to your account to continue.</p>
+	
+	</div>
+	<span class="clearfix">
+	</span>
+	<form>
+	<div class="form-group">
+	<label class="form-control-label">Email address</label>
+	<div class="input-group"><div class="input-group-prepend">
+	<span class="input-group-text">
+	<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+	<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4">
+	</circle></svg></span></div>
+	<input type="email" class="form-control" id="input-email" placeholder="name@example.com">
+	</div></div><div class="form-group mb-0">
+	<div class="d-flex align-items-center justify-content-between"><div>
+	<label class="form-control-label">Password</label></div><div class="mb-2">
+	<a href="#" class="small text-muted  border-primary" data-toggle="password-text" data-target="#input-password">
+	Show password</a></div></div><div class="input-group"><div class="input-group-prepend"><span class="input-group-text">
+	<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-key">
+	<path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+	</path></svg></span></div><input type="password" class="form-control" id="input-password" placeholder="Password"></div>
+	</div>
+	
+	<div class="mt-4">
+	<button type="button" class="btn btn-block btn-primary" style="color: #fff; 
+     background-color: #008aff; 
+    border-color: #008aff; 
+     box-shadow: none;">Sign in</button>
+	
+	
+	</div></form><div class="py-3 text-center"><span class="text-xs text-uppercase">or</span></div><div class="row"><div class="col-sm-6">
+	<a href="#" class="btn btn-block btn-neutral btn-icon mb-3 mb-sm-0" style="display: inline-block;
+    font-weight: 600;
+    color: #718096;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #000000b8;
+    padding: .75rem 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .375rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;">
+	<span class="btn-inner--icon" >
+	
+	
+	<img src="./github.svg" alt=""></span><span class="btn-inner--text">Github</span>
+	
+	</a></div>
+	
+	
+	<div class="col-sm-6">
+	<a href="#" class="btn btn-block btn-neutral btn-icon"style="display: inline-block;
+    font-weight: 600;
+    color: #718096;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #000000b8;
+    padding: .75rem 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .375rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;">
+	<span class="btn-inner--icon">
+	
+	<img src="./google.svg" alt="" >
+	
+	</span>
+		<span class="btn-inner--text">Google</span>
+	
+	</a>
+	</div>
+	</div>
+	
+	
+	<div class="mt-4 text-center">
+	<small>Not registered?</small> 
+	<a href="register-basic.html" class="small font-weight-bold">Create account</a></div></div></div></div></div>
+	</section>
+	
+	<!-- stop horizontal card-->
+
+
+<div class="container-fluid">
+  <!-- FOOTER -->
+  <hr >
+  <!--featurette-->
+</div>
+  
+   <div class="container">
+   <div class="footer__inner">
+                             <div class="footer__item">
+                                <form action="//getbootstrap.us13.list-manage.com/subscribe/post?u=e3428dd6b8fda73bc5ba8b6e6&amp;id=198881a019" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                                    <div class="d-md-flex justify-content-between align-items-center">
+                                        <div class="form-group">
+                                            <h5 class="mb-1">Get new themes in your inbox!</h5>
+                                            <div class="form-text mt-0">New themes or big discounts. Never spam.</div>
+                                        </div>
+                                           <div id="signup_footer" class="d-flex align-items-start">
+                                                <div class="form-group w-100 mr-2">
+                                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+													
+					<input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019" tabindex="-1" value="">
+					</div>
+                    <input id="mce-EMAIL" class="footer__email-input form-control form-control--muted" name="EMAIL" type="email" aria-describedby="footerEmail" placeholder="Email address">
+                                                </div>
+                 <input class="btn btn-info"  type="submit" value="Subscribe" name="subscibe" id="mc-embedded-subscribe">
+                                            </div>
+                                           </div>
+                                </form>
+                            </div>
+							
+							</div>
+							
+							<hr >
+    
+  <footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+      <small class="d-block mb-3 text-muted">© 2017-2020</small>
+    
+    </div>
+	
+	
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li> 
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+	
+	<div class="col-6 col-md">
+      <!--h5>About</h5>-->
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#"><p ><a href="#">Back to top</a></p></a></li>
+        
+      </ul>
+    </div>
+	<footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2017-2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+	
+	<div class="inner-container">
+	<div class="footer__item d-lg-flex justify-content-lg-between align-items-lg-center">
+	<ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Help Center</a></li>
+      <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+      <li class="list-inline-item"><a href="#">  Licenses </a></li>
+	    <li class="list-inline-item"><a href="#">   Support</a></li>
+    </ul>
+                       <!-- <ul id="menu-seller-footer" class="nav sub-nav footer__sub-nav">
+<li id="menu-item-1333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1333">
+<a title="Help Center" href="link">Help Center</a></li> . 
+<li id="menu-item-1335" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1335">
+<a title="Terms of Service" href="https://themes.getbootstrap.com/terms/">Terms of Service</a></li> .
+<li id="menu-item-1334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1334">
+<a title="Licenses" href="https://themes.getbootstrap.com/licenses/">Licenses</a></li> .
+<li id="menu-item-49443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49443">
+<a title="Sell Themes" href="https://themes.getbootstrap.com/sell/">Sell Themes</a></li>
+</ul>  -->
+                  
+<p class="hidden-sm-down d-none d-lg-block">Trying to redownload a theme? Use our 
+<a href="https://themes.getbootstrap.com/redownload/">redownload page.</a></p>
+                    </div>
+					</div>
+  </footer>
+	</div>
+  </div>
+    
+</footer>
+</div>
+</div>
+</div>
+<!--<div class="container"  style="padding:25px;" >
+                <div class="footer__inner">
+                  <div class="footer__item">
+                                <form action="//getbootstrap.us13.list-manage.com/subscribe/post?u=e3428dd6b8fda73bc5ba8b6e6&amp;id=198881a019" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                                    <div class="d-md-flex justify-content-between align-items-center">
+                                        <div class="form-group">
+                                            <h5 class="mb-1">Get new themes in your inbox!</h5>
+                                            <div class="form-text mt-0">New themes or big discounts. Never spam.</div>
+                                        </div>
+                                           <div id="signup_footer" class="d-flex align-items-start">
+                                                <div class="form-group w-100 mr-2">
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019" tabindex="-1" value=""></div>
+                                                    <input id="mce-EMAIL" class="footer__email-input form-control form-control--muted" name="EMAIL" type="email" aria-describedby="footerEmail" placeholder="Email address">
+                                                </div>
+                                                <input class="btn btn-brand" type="submit" value="Subscribe" name="subscibe" id="mc-embedded-subscribe">
+                                            </div>
+                                                                            </div>
+                                </form>
+                            </div>
+							
+							</div>
+							</div>-->
+							
+
+
+  <!-- STop THE main (body) -->
+  
+ 
+  
+	
+ 
+                </div>
+            </div>
+        </footer>
+   </main>
+   </div>
+</footer>
+	
+	
+	
+	
+	
+	
+	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
